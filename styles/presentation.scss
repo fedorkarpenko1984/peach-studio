@@ -1,0 +1,139 @@
+.presentation {
+  &__text-wrapper {
+    width: 1110px;
+    height: 350px;
+    margin-top: 100px;
+    &__text {
+      text-align: center;
+      width: 890px;
+      font-size: 32px;
+      span {
+        color: #B01736;
+      }
+    }
+    &__text-mobile {
+      display: none;
+    }
+  }
+  &__achievements {
+    width: 1250px;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &__achievement {
+      width: 250px;
+      padding: 0 50px;
+      font-size: 80px;
+      height: 95px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      margin-bottom: 80px;
+    }
+    &__achievement div {
+      color: #A30C33;
+      line-height: 80%;
+    }
+    &__achievement p {
+      margin-top: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px)  {
+  .presentation {
+    &__text-wrapper {
+      width: calc(100% - 60px);
+      height: 350px;
+      margin-top: 80px;
+      &__text {
+        text-align: center;
+        width: calc(100% - 30px);
+        font-size: 28px;
+      }
+    }
+    &__achievements {
+      width: 100%;
+      &__achievement {
+        padding: 0;
+        width: 30%;
+        align-items: center;
+      }
+      &__achievement div {
+        font-size: 72px;
+        line-height: 80%;
+      }
+      &__achievement p {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px)  {
+  .presentation__text-wrapper__text {
+    font-size: 24px;
+  }
+  .presentation__achievements {
+    width: 100%;
+    &__achievement {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__achievement div {
+      font-size: 72px;
+      line-height: 80%;
+    }
+    &__achievement p {
+      margin-top: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px)  {
+  .presentation__text-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    padding: 24px 0px;
+    &__text {
+      display: none;
+    }
+    &__text-mobile {
+      display: block;
+      text-align: center;
+      padding: 0 5px;
+      font-size: 20px;
+      line-height: 120%;
+      span {
+        color: #B01736;
+      }
+    }
+  }
+  .presentation__achievements {
+    &__achievement {
+      width: 50%;
+    }
+    &__achievement div {
+      font-size: 56px;
+      line-height: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px)  {
+  .presentation__text-wrapper__text-mobile {
+    font-size: 16px;
+  }
+  .presentation__achievements {
+    margin-bottom: 24px;
+    &__achievement div {
+      font-size: 40px;
+      line-height: 80%;
+    }
+  }
+}

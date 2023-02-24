@@ -1,0 +1,42 @@
+.busines-directions {
+  padding-top: 100px;
+  &__wrapper {
+    max-width: 1250px;
+    width: 100%;
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1290px)  {
+  .busines-directions {
+    &__wrapper {
+      width: calc(100% - 40px);
+    }
+  }
+}
+
+@media screen and (max-width: 992px)  {
+  .busines-directions {
+    &__wrapper {
+      max-width: 615px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 260px);
+    }
+  }
+}
+
+@media screen and (max-width: 576px)  {
+  .busines-directions {
+    &__wrapper {
+      max-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+

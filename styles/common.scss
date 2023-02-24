@@ -1,0 +1,83 @@
+@font-face {
+  font-family: ProximaCondBold;
+  src: url(assets/fonts/ProximaNovaCond-Semibold.woff);
+}
+@font-face {
+  font-family: ProximaCond;
+  src: url(assets/fonts/ProximaNovaCond-Regular.woff);
+}
+@font-face {
+  font-family: Proxima;
+  src: url(assets/fonts/ProximaNova-Regular.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: ProximaCondBold, monospace;
+  color: #444;
+}
+button {
+  outline: none;
+  border: none; 
+}
+p {
+  font-size: 18px;
+}
+.container {
+  max-width: 1250px;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.ml-10px {
+  margin-left: 10px;
+}
+.shadow {
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.08);
+}
+.reverse {
+  transform: scaleX(-1);
+}
+h1 {
+  font-size: 56px;
+  line-height: 100%;
+  text-align: center;
+  font-weight: 400;
+}
+h2 {
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  font-weight: 400;
+}
+footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 992px)  {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 576px)  {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
